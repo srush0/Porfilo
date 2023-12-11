@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(
+    118.29% 283.09% at 106.71% 0%,
+    #310351 0%,
+    #8c43ec 100%
+  );
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.circle1 {
+  border-radius: 50%;
+  background: rgba(217, 217, 217, 0.1);
+  height: 80vw;
+  width: 80vw;
+  position: absolute;
+  top: -5vw;
+  left: 50vw;
+  z-index: -1;
+
+  animation-name: animation2;
+  animation-duration: 2s;
+  animation-timing-function:  ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes animation2 {
+  0% {
+    top: -10vw;
+    left: 60vw;
+  }
+
+  75% {
+    top: -2vw;
+    left: 45vw;
+  }
+
+  100% {
+    top: -5vw;
+    left: 50vw;
+  }
+}
+
+#speaker {
+  position: absolute;
+  width: 55vw;
+  height: auto;
+  bottom: 0;
+  left: 5vw;
+  animation-name: speaker;
+  animation-duration: 1.5s;
+  animation-timing-function:  ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes speaker {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.parent {
+  width: 100vw;
+  height: 95vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.child {
+  margin-right: 7vw;
+  width: 30vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.child h1 {
+  width: 100%;
+  text-align: end;
+  font-family: 'Poppins', sans-serif;
+  font-size: 4vw;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 2vw 0;
+}
+
+.child p {
+  width: 100%;
+  text-align: end;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2vw;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 18px;
+}

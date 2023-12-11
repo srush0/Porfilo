@@ -1,0 +1,41 @@
+.nav {
+    width: 100vw;
+    height: 5vw;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+  }
+
+.nav-ul {
+    width: 50vw;
+    height: 5vw;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0 2vw;
+}
+
+.nav-ul li {
+    width: fit-content;
+    height: 100%;
+    padding: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .4s;
+}
+
+.nav-ul li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+    letter-spacing: 1px;
+}
